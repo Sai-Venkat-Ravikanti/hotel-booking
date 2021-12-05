@@ -1,0 +1,22 @@
+html , body{
+    height: 100%;
+    width: 100%;
+    
+}
+.main-div{
+ height: 100%;
+ width: 100%;
+}
+ .logo{
+     border-radius: 100%;
+     height: 60px;
+     width: 60px;
+ }
+ .img-places{
+     height: 150px;
+     width: 150px;
+ }
+ .socialmedia-img{
+     height: 20px;
+     width: 22px;
+ }
