@@ -1,7 +1,8 @@
 html , body{
     height: 100%;
     width: 100%;
-    
+    margin:0%;
+    background-color: #e0e0e0;
 }
 .main-div{
  height: 100%;
@@ -19,4 +20,25 @@ html , body{
  .socialmedia-img{
     height: 20px;
     width: 22px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+   background-color: rosybrown;
+}
+.hotel-address{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+.customer-details{
+    margin:2%;
+}
+.tarrif-details{
+    margin: 2%;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
 }

@@ -1,6 +1,8 @@
 html,body{
     height: 100%;
     width: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
   }
   .main-div{
       height: 100%;
@@ -14,9 +16,25 @@ html,body{
   .raddison-img-detail{
       height: 500px;
       width: 500px;
+      margin-top:2%;
+      margin-left:4%;
+      margin-right:4%;
   }
   .socialmedia-img{
     height: 20px;
     width: 22px;
 }
-  
+header{
+    background-color: rosybrown;
+}
+footer{
+   background-color: rosybrown;
+}
+form{
+    margin-left: 4%;
+    margin-bottom: 1%;
+    margin-right: 4%;
+}
+.hotel-details{
+    margin:1% 4% 2% 4%;
+}
