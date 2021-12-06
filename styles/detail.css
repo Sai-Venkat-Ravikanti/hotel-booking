@@ -1,75 +1,133 @@
-html,body{
-    height: 100%;
-    width: 100%;
+
+body
+{
     margin: 0%;
     background-color: #e0e0e0;
-    font-family: 'Ubuntu',sans-serif;
-  }
-  .main-div{
-      height: 100%;
-      width: 100%;
-  }
-  .logo{
-      border-radius: 100%;
-      height: 60px;
-      width: 60px;
-  }
-  .raddison-img-detail{
-      height: 500px;
-      width: 500px;
-      margin-top:2%;
-      margin-left:4%;
-      margin-right:4%;
-  }
-  .socialmedia-img{
+    font-family:'Ubuntu', sans-serif;
+}
+header
+{
+    background-color: rosybrown;
+    font-family: 'Ubuntu' sans-serif;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+#login
+{
+    margin-right: 2%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#logo
+{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+#content
+{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#Description
+{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+form
+{
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: space-between;
+    border: 1;
+}
+.social-Img
+{
     height: 20px;
     width: 22px;
 }
-header{
+#Radison
+{
+    max-height: 350px;
+    width: 500px;
+    margin: 2% 0;
+}input[type=text] input[type=date]
+{
+    width:60%;
+    margin-right: 5%;
+}
+h4
+{
+    font-family: cursive;
+}
+#hotel-Registration
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-top: 2%;
+    max-height: 400px;
+}
+.form-element{
+    margin-bottom: 10%;
+    vertical-align: middle;
+}
+.form-element:first-child
+{
+    margin-top: 30px;
+}
+#Form-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: 1px solid black;
+}
+#button1
+{
+  margin: 0 50% ;
+    padding: 2% ;
+}
+label
+{
+    display: inline-block;
+    width: 150px;
+    margin-left: 20px;
+}
+footer
+{
     background-color: rosybrown;
+    font-family:'Ubuntu' sans-serif;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    top:0;
-    width: 100%;
-    position:sticky;
-
 }
-footer{
-   background-color: rosybrown;
-   display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position:sticky;
-    bottom: 0;
-    font-family: 'Ubuntu',sans-serif;
-}
-.login{
-        color: black;
-        text-decoration: none;
-        margin-right: 2%;
-}
-form{
-    margin-left: 4%;
-    margin-bottom: 1%;
-    margin-right: 4%;
-}
-.hotel-details{
-    margin:1% 4% 2% 4%;
-}
-#copyright{
-    margin-top: 50px;
-    }
-    #contactus{
+#social-container
+{
     margin-top: 20px;
-    margin-left:2%;
-    }
-    
-    #contact-us{
-        color: black;
-        text-decoration: none;  
-    }
-    #socialicon{
-        margin-top: 20px;
-        margin-right: 2%;
-    }
+    margin-right: 10px;
+}
+#contactUs
+{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#Copyright
+{
+    margin: 20px;
+}

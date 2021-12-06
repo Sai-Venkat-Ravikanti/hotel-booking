@@ -35,10 +35,12 @@ footer{
    background-color: rosybrown;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     position:sticky;
     bottom: 0;
     font-family: 'Ubuntu',sans-serif;
+    height: 50px;
 }
 /* .pic-hotel{
     margin: 2%;
@@ -51,11 +53,7 @@ footer{
     margin-right: 2%;
    }
 
-#copyright{
-    margin-top: 50px;
-    }
     #contactus{
-    margin-top: 20px;
     margin-left:2%;
     }
     #contact-us{
@@ -63,7 +61,6 @@ footer{
         text-decoration: none;  
     }
     #socialicon{
-        margin-top: 20px;
         margin-right: 2%;
     }
     #list-view{
@@ -83,7 +80,7 @@ footer{
         padding: 5px;
         list-style-type: none;
     }
-    #mapview{
+    #mapView{
         display:none;
     }
     /* #listview{
@@ -101,7 +98,7 @@ footer{
         padding: 2% 2%;
     }
     .List-Item{
-        background-color: rgb(132,136,139);
+        background-color: lightgrey;
         margin: 2% 5%;
         width: 40%;
         float: left;
