@@ -3,6 +3,7 @@ html , body{
     width: 100%;
     margin:0%;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu',sans-serif;
 }
 .main-div{
  height: 100%;
@@ -23,9 +24,22 @@ html , body{
 }
 header{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    width: 100%;
+    position:sticky;
+
 }
 footer{
    background-color: rosybrown;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   position:sticky;
+   bottom: 0;
+   font-family: 'Ubuntu',sans-serif;
 }
 .hotel-address{
     background-color: rgb(132,136,139);
@@ -41,4 +55,25 @@ footer{
     border:1px solid black;
     border-radius: 5px;
     padding: 1% 2% 1% 2%;
+}
+#copyright{
+    margin-top: 50px;
+    }
+    #contactus{
+    margin-top: 20px;
+    margin-left:2%;
+}
+    
+#contact-us{
+    color: black;
+    text-decoration: none;  
+}
+#socialicon{
+     margin-top: 20px;
+     margin-right: 2%;
+ }
+ .login{
+    color: black;
+    text-decoration: none;
+    margin-right: 2%;
 }

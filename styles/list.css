@@ -3,6 +3,7 @@ html,body{
   width: 100%;
   margin: 0%;
   background-color: #e0e0e0;
+  font-family:'Ubuntu',sans-serif;
 }
 .main-div{
     height: 100%;
@@ -13,22 +14,100 @@ html,body{
     height: 60px;
     width: 60px;
 }
-.hotel-img{
+/* .hotel-img{
     height: 200px;
     width: 250px;
-}
+} */
 .socialmedia-img{
     height: 20px;
     width: 22px;
 }
 header{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    width: 100%;
+    position:sticky;
 }
 footer{
    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position:sticky;
+    bottom: 0;
+    font-family: 'Ubuntu',sans-serif;
 }
-.pic-hotel{
+/* .pic-hotel{
     margin: 2%;
     background-color:  rgb(132,136,139);
     width: 40%;
-}
+} */
+.login{
+    color: black;
+    text-decoration: none;
+    margin-right: 2%;
+   }
+
+#copyright{
+    margin-top: 50px;
+    }
+    #contactus{
+    margin-top: 20px;
+    margin-left:2%;
+    }
+    #contact-us{
+        color: black;
+        text-decoration: none;  
+    }
+    #socialicon{
+        margin-top: 20px;
+        margin-right: 2%;
+    }
+    #list-view{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+    #map-view{
+        text-decoration: none;
+        color: black;
+        font-weight: bold; 
+    }
+    #view-list{
+        display:flex;
+        justify-content:center;
+        padding: 5px;
+        list-style-type: none;
+    }
+    #mapview{
+        display:none;
+    }
+    /* #listview{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } */
+    .hotel-Img{
+        height: 200px;
+        width: 250px;
+        float: left;
+        margin-right: 2%;
+    }
+    .hotel-Details{
+        padding: 2% 2%;
+    }
+    .List-Item{
+        background-color: rgb(132,136,139);
+        margin: 2% 5%;
+        width: 40%;
+        float: left;
+        padding-top: 0;
+    }
+    .rad-blu-link{
+        text-decoration: none;
+        color: black;
+    }
