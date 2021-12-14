@@ -1,4 +1,4 @@
-html,body{
+/* html,body{
   height: 100%;
   width: 100%;
   margin: 0%;
@@ -18,7 +18,7 @@ html,body{
     height: 200px;
     width: 250px;
 } */
-.socialmedia-img{
+/* .socialmedia-img{
     height: 20px;
     width: 22px;
 }
@@ -41,16 +41,21 @@ footer{
     bottom: 0;
     font-family: 'Ubuntu',sans-serif;
     height: 50px;
-}
+} */
 /* .pic-hotel{
     margin: 2%;
     background-color:  rgb(132,136,139);
     width: 40%;
 } */
-.login{
+/* .login{
     color: black;
     text-decoration: none;
     margin-right: 2%;
+   }
+    #login{
+        float:right;
+        margin-top: 12px;
+        margin-right: 20px;
    }
 
     #contactus{
@@ -82,18 +87,19 @@ footer{
     }
     #mapView{
         display:none;
-    }
+    } */
     /* #listview{
         display: flex;
         flex-direction: row;
         align-items: center;
     } */
-    .hotel-Img{
+    /* .hotel-Img{
         height: 200px;
         width: 250px;
         float: left;
         margin-right: 2%;
     }
+
     .hotel-Details{
         padding: 2% 2%;
     }
@@ -104,7 +110,260 @@ footer{
         float: left;
         padding-top: 0;
     }
+    .List-Item:hover{
+        background-color: rosybrown;
+    }
     .rad-blu-link{
         text-decoration: none;
         color: black;
     }
+    .rad-blu-link:hover{
+        text-decoration: none;
+        color: black;
+    } */ 
+    /* @import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+body
+{
+    margin: 0%;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+header
+{
+    background-color: rosybrown;
+    font-family: 'Ubuntu' sans-serif;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+.float-md-right
+{
+    padding-right:20px;
+    padding-top: 12px;
+    font-family:'Ubuntu' sans-serif ;
+}
+#login
+{
+    margin-right: 2%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+li
+{
+    display: inline; 
+    float: left;
+    margin: 30px;
+    font-weight: bolder;
+}
+#view-type
+{
+    display: flex;
+    justify-content: center;
+}
+#mapView
+{
+    display: block;
+}
+.List-Item
+{
+    background-color: lightgray;
+    margin: 2% 5%;
+    width: 40%;
+   float: left;
+   padding-top: 0;
+}
+#mapbtn:focus #mapView
+{
+    display: block;
+}
+#mapbtn:focus #listView
+{
+    display: none;
+}
+.List-Item:hover
+{
+    background-color: rosybrown;
+}
+#logo
+{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+.social-Img
+{
+    height: 20px;
+    width: 22px;
+}
+.hotel-Img
+{
+    height: 200px;
+    width: 250px;
+    float: left;
+    margin-right: 2%;
+}
+.hotel-Details
+{
+    padding: 2% 2%;
+}
+.checked 
+{
+    color: orange;
+}
+footer
+{
+    background-color: rosybrown;
+    font-family:'Ubuntu' sans-serif;
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+#social-container
+{
+    margin-top: 20px;
+    margin-right: 2%;
+}
+#contactUs
+{
+    margin-top: 20px;
+    margin-left: 2%;
+} */
+#pills-tab{
+    justify-content: center;
+  }
+  ul{
+    text-align: center;
+  }
+  li{
+    padding: 2%;
+    display: inline-block;
+    font-weight: bold;
+  }
+  #list-view{
+    align-content: center;
+  }
+  /*Map view - no display*/
+  #map-view{
+    /* display: none; */
+  }
+  /*Hotel cards*/
+  .hotels{
+    margin: 2%;
+    background-color: lightgray;
+    width: 40%;
+    display: inline-block;
+  }
+  .hotels:hover{
+    background-color: rosybrown;
+  }
+  .hotels-info{
+    display: inline-block;
+    align-self: center;
+    margin-left: 2%;
+  }
+  #list-view img{
+    height: 200px;
+    width: 250px;
+    float: left;
+  }
+  .modals{
+    display: flex;
+    justify-content: space-around;
+  }
+  .modal-body{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  .modal-body button{
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  html, body, .containerM{
+    width: 100% !important;
+    height: 100%;
+    font-family: 'Ubuntu',sans-serif;
+   }
+   a{
+    text-decoration: none !important;
+    color: black !important;
+   }
+   body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #e0e0e0 !important;
+   }
+   .containerM{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+   }header, footer{
+     background-color: rosybrown;
+     z-index: 3;
+   }
+   header{
+     display: flex;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+   }
+   /*Login button*/
+   header button{
+     justify: flex-end;
+     align-self: center;
+     margin-right: 2%;
+   }
+   /*Logo*/
+   header img{
+     height: 60px;
+     width: 60px;
+     justify-content: flex-start;
+     margin-left: 1%;
+   }
+   .social-links{
+     width: 80px;
+   }
+   .social-links img{
+     width: 22px;
+     height: 20px;
+   }
+   /*Footer whole*/
+   footer{
+     position: sticky;
+     bottom: 0;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     padding: 1%;
+   }
+   footer a{
+     align-self: center;
+     order: 1;
+     margin-left: 2%;
+   }
+   footer .social-links{
+     align-self: center;
+     order: 3;
+     margin-right: 2%;
+   }
+   footer span{
+     order: 2;
+     font-size: 10px;
+     align-self: center;
+   }
+   /* Ratings star*/
+   .checked {
+       color: orange;
+   }

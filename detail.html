@@ -7,12 +7,43 @@
     <title>Detail</title>
     <link rel="stylesheet" href="styles/detail.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="modal fade" id="login-button" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="example-input-email" class="col-form-label" >Name</label>
+                      <input type="text" class="form-control" id="example-input-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="example-input-email" class="col-form-label" >Email address</label>
+                        <input type="text" class="form-control" id="example-input-email">
+                      </div>
+                    </form>
+            </div>
+            <div class="modal-footer" id="login-in-modal">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary" >Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <header>
         <a href="index.html">
-            <img src="assests/images/logo.png" alt="logo" id="logo">  <div id="login"><a href="login.html">Login </a></div>
-        </a>
+            <img src="assests/images/logo.png" alt="logo" id="logo"></a>
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-button" id="login">Login</button>
     </header>
     <div id="content">
         <div id="hotel-Registration">
@@ -41,12 +72,13 @@
                 <input type="text" name="total" name="price" readonly>
             </div>
             <div class="form-element">
-                <input type="submit" value="Book Now" id="button1">
+                <input type="submit" value="Book Now" id="button1" class="btn btn-outline-success">
+                <!-- <button type="button" class="btn btn-outline-success"  id="button1">Book Now</button> -->
             </div>
             </form>
         </div>
     </div>
-        <p id="Description">
+        <div id="Description">
             <h2>Radison Blu Hotel</h2>
             <p><h4>RATING</h4></p>
            <p>5 Star</p>
@@ -59,7 +91,7 @@
                     <li>Fitness Center</li>
                     <li>Pool</li>
                 </ul>
-            </p>
+            </div>
             <p>
                 <dl>
                     <dt> <h4>DESCRIPTION </h4>  </dt>
@@ -68,7 +100,7 @@
             </p>
         </p>
     </div>
-    <footer>
+    <!-- <footer>
         <div id="contactUs">
     <a href="contact.html" target="_blank">Contact Us</a><br>
 </div>
@@ -82,5 +114,48 @@
     <br>
 </div>
 </footer>
+</body>
+</html> -->
+
+   <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Thank You for reaching out!!</p>
+            <p>Please enter your email we will Contact you</p>
+            <form>
+                <div class="form-group">
+                    <label for="example-input-email" class="col-form-label" >Email address</label>
+                    <input type="text" class="form-control" id="example-input-email">
+                  </div>
+                </form>
+        </div>
+        <div class="modal-footer" id="login-in-modal">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-primary" >Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer style="display: flex; justify-content:space-between;align-items: center;">
+    <div id="contactus">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contact" id="contact">Contact</button>
+    </div>
+    <div id="copyright">
+        &copy; 2020 ROOM SEARCH PVT LTD
+    </div>
+    <div id="socialicon">
+        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialmedia-img" height="20px" width="22px"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialmedia-img" height="20px" width="22px"></a>
+       <a href="https://twitter.com" target="_blank"> <img src="assests/images/twitter.png" class="socialmedia-img" height="20px" width="22px"></a><br>
+    </div>
+</footer>
+    </div>
 </body>
 </html>

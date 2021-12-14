@@ -42,9 +42,9 @@ body{
  }
  footer{
     background-color: rosybrown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
     width: 100%;
     position:sticky;
     bottom: 0;
@@ -67,10 +67,13 @@ body{
      justify-content: space-around;
      
  } */
- .login{
-     color: black;
-     text-decoration: none;
-     margin-right:2%;
+ #login{
+    float:right;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+.login:hover{
+    text-decoration: none;
 }
 .searchbar{
 background-color: #f1f1f1;
@@ -150,4 +153,7 @@ input:focus{
 .City-Img{
     display: block;
 }
-
+.login-in-modal{
+ display: flex;
+ justify-content: center;
+}

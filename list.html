@@ -1,76 +1,187 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\list.css">
+    <title>List</title>
+    <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/list.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>list</title>
-</head>
-<body>
-    <div class="main-div">
-        <header>
-        <a href="index.html"><img src="assests\images\logo.png" class="logo" alt="logo" height="200px" width="150px"></a>
-        <a href="login.html" class="login" >Login</a>
-        </header>
-        <div id="content">
-     <div>
-       
-         <ul id="view-list">
-           <li><a href="#listview" id="list-view">List View</a></li>
-           <li><a href="#mapView" id="map-view">Map View</a></li>
-         </ul>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="containerM">
+      <!-- Header div -->
+      <header>
+        <!--Clickable logo to redirect to index.html-->
+        <a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150px" height="100px"></a>
+        <!-- <a href="login.html" target="_self">Login</a> -->
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login">Login</button>
+      </header>
+      <ul class="nav nav-pills" id="pills-tab">
+         <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#map-view">Map View</a>
+         </li>
+      </ul>
+        <!-- Hotels Info -->
+          <!--Clickable info Div-->
+      <div class="tab-content" id="pills-tab-content">
+        <div id="list-view" class="tab-pane fade show active">
+            <a href="detail.html">
+              <div class="hotels">
+                <!-- Hotel 1 - Radisson Blu, New Delhi -->
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                <div class="hotels-info">
+                  <h3>Radisson Blu Hotel</h3>
+                  <div id="rating">
+                      <span class="fa fa-star checked" id="1"></span>
+                      <span class="fa fa-star checked" id="2"></span>
+                      <span class="fa fa-star checked" id="3"></span>
+                      <span class="fa fa-star checked" id="4"></span>
+                      <span class="fa fa-star checked" id="5"></span>
+                  </div>
+                  <p>New Delhi</p>
+                </div>
+              </div>
+            </a>
+
+            <div class="hotels">
+              <!-- Hotel 2 - The Lalit, New Delhi -->
+              <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit">
+              <div class="hotels-info">
+                <h3>The Lalit New Delhi</h3>
+                <div id="rating">
+                    <span class="fa fa-star checked" id="1"></span>
+                    <span class="fa fa-star checked" id="2"></span>
+                    <span class="fa fa-star checked" id="3"></span>
+                    <span class="fa fa-star-half-o checked" id="4"></span>
+                    <span class="fa fa-star" id="5"></span>
+                </div>
+                <p>New Delhi</p>
+              </div>
+            </div>
+
+          <div class="hotels">
+            <!-- Hotel 3 - Taj Palace, New Delhi -->
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+            <div class="hotels-info">
+              <h3>Taj Palace</h3>
+              <div id="rating">
+                  <span class="fa fa-star checked" id="1"></span>
+                  <span class="fa fa-star checked" id="2"></span>
+                  <span class="fa fa-star checked" id="3"></span>
+                  <span class="fa fa-star checked" id="4"></span>
+                  <span class="fa fa-star" id="5"></span>
+              </div>
+              <p>New Delhi</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="map-view" class="tab-pane fade">
+          <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image">
+          <p>MAP VIEW</p>
+        </div>
+      </div>
+        <!--MODAL CODE-->
+        <!--Login modal-->
+        <!-- <div id="login-modal" tabindex="-1" class="modal fade modals" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modal-header">
+                        <h4 class="modal-title">Please Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="" action="index.html" method="GET" autocomplete="off" target="_self">
+                        <label for="example-input-name">Username: </label>
+                        <input type="text" id="example-input-name" name="username" value="" class="example-input-text" placeholder="Enter Username" required>
+                        <br><br>
+                        <label for="example-input-password">Password: </label>
+                        <input type="password" id="example-input-password" name="password" value="" class="example-input-password" placeholder="Enter Password" required>
+                        <br>
+                        <button type="submit" name="button" class="btn btn-primary">Login</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="login-modal-label">Please Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="login-form">
+                                    <div class="login-field">
+                                        <label for="username">Username: </label>
+                                        <input type="text" id="username" name="username" placeholder="Enter Username" required />
+                                    </div>
+                                    <div class="login-field">
+                                        <label for="password">Password: </label>
+                                        <input type="password" id="password" name="password" placeholder="Enter Password" required />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!--Contact Modal-->
+        <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contact-modal-label">Get in touch</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <p>
+                                            Thank you for reaching out!!! <br>
+                                            Please enter you email and we will get back to you.
+                                        </p>
+                                        <label for="email">Email: </label>
+                                        <input type="text" id="email" name="email" placeholder="Enter your email id" required>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      <!-- Footer div -->
+      <footer>
+        <!-- Contact us link -->
+        <!-- <a href="contact.html" target="_self">Contact Us</a> -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contact-modal" id="contact">Contact Us</button>
+        <!-- Social media links -->
+        <div class="social-links">
+          <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="instagram"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="twitter"></a>
+        </div>
+        <!--Copyright text-->
+        <span id="copyright">&copy; 2021 ROOM SEARCH PVT. LTD.</span>
+      </footer>
     </div>
-        <div id="listview">
-            <div class="List-Item">
-                <a href="detail.html" class="rad-blu-link">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison blu" class="hotel-Img">
-            <br>
-            <div class="hotel-Details">
-            <h3>Radison Blu Hotel</h3>
-            5 Star <br><br>
-            New Delhi
-        </div>
-        </div>
-        </a>
-        </div>
-        <div class="List-Item">   
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi" class="hotel-Img">
-            <div class="hotel-Details">
-            <h3>The Lalit New Delhi</h3>
-            4.5 Star <br> <br>
-            New Delhi
-        </div>
-        </div>
-        <div class="List-Item">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace" class="hotel-Img">
-            <div class="hotel-Details">
-            <h3>Taj Palace</h3>
-            4 Star <br> <br>
-            New Delhi
-            </div>
-        </div>
-        <div id="mapView">
-            <p>
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image"><br>
-                MAP VIEW
-            </p>
-            </div>
-            <br><br><br><br>
-        <footer>
-            <div id="contactus">
-                <a href="contact.html" id="contact-us" >Contact us</a>
-            </div>
-            <div id="copyright">
-                &copy; 2020 ROOM SEARCH PVT LTD
-            </div>
-            <div id="socialicon">
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialmedia-img"  height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialmedia-img" height="20px" width="22px"></a>
-               <a href="https://twitter.com" target="_blank"> <img src="assests/images/twitter.png" class="socialmedia-img" height="20px" width="22px"></a>
-            </div>
-        </footer>
-    </div>
-</body>
+  </body>
 </html>

@@ -18,10 +18,12 @@ header
     position: sticky;
     top: 0;
 }
-#login
-{
-    margin-right: 2%;
-}
+
+    #login{
+        float:right;
+        margin-top: 12px;
+        margin-right: 20px;
+    }
 a
 {
     text-decoration: none;
@@ -83,7 +85,7 @@ h4
     max-height: 400px;
 }
 .form-element{
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     vertical-align: middle;
 }
 .form-element:first-child
@@ -98,7 +100,7 @@ h4
 }
 #button1
 {
-  margin: 0 50% ;
+  margin: 0 35% ;
     padding: 2% ;
 }
 label
@@ -114,8 +116,8 @@ footer
     width: 100%;
     position: sticky;
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 #social-container
 {
