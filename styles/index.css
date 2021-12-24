@@ -107,7 +107,7 @@ input:focus{
 .view-more{
     text-align: center;
 }
-#Img-Container{
+.Img-Container{
     text-align: center;
     align-items: center;
     display: flex;
@@ -129,6 +129,7 @@ input:focus{
     /* float: left; */
     border-radius: 25%;
     margin-top:10px;
+    margin-bottom: 50px;
 }
 .City-Img-Container .alpha{
  display: none;
