@@ -103,10 +103,11 @@ input:focus{
 #viewmore{
     /* text-align: center; */
     text-decoration: none;
+    margin: auto;
 }
-.view-more{
-    text-align: center;
-}
+/* .view-more{
+    margin: auto;
+} */
 .Img-Container{
     text-align: center;
     align-items: center;
@@ -157,4 +158,19 @@ input:focus{
 .login-in-modal{
  display: flex;
  justify-content: center;
+}
+
+#logout{
+    display: none;
+    float:right;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+#Viewless{
+    display: none;
+    text-decoration: none;
+    margin: auto;
+}
+#New-cities{
+    display: none;
 }

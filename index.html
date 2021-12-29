@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles\index.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <script src="scripts\index.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
@@ -24,30 +25,31 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                      <label for="example-input-email" class="col-form-label" >Name</label>
-                      <input type="text" class="form-control" id="example-input-email">
+                      <label for="example-input-name" class="col-form-label" >User Name</label>
+                      <input type="text" class="form-control" id="example-input-name">
                     </div>
                     <div class="form-group">
-                        <label for="example-input-email" class="col-form-label" >Email address</label>
-                        <input type="text" class="form-control" id="example-input-email">
+                        <label for="example-input-password" class="col-form-label" >Password</label>
+                        <input type="password" class="form-control" id="example-input-password">
                       </div>
                     </form>
             </div>
             <div class="modal-footer" id="login-in-modal">
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-              <button type="button" class="btn btn-primary" >Login</button>
+              <button type="button" onclick="saveData()" class="btn btn-primary" id="LoginBtn" >Login</button>
             </div>
           </div>
         </div>
       </div>
     <div class="main-div">
         <header>
-        <!-- <div id="header"> -->
+         <!-- <div id="header"> -->
        <img src="assests\images\logo.png" class="logo" alt="logo" height="200px" width="150px">
        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-button" id="login">Login</button>
-
+       <button type="button" onclick="logoutCollapse()" class="btn btn-light" id="logout">Logout</button>
         <!-- </div> -->
         </header>
+      
         <div id="content">
         <div>
             <form class="search">
@@ -80,7 +82,7 @@
             <div class="alpha">Kolkata</div>
             </div>
         </div>
-        <div class="Img-Container">
+        <div class="Img-Container" id="New-cities">
           <div class="City-Img-Container">
             <div class="City-Img">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="Chennai"></div>
@@ -104,7 +106,8 @@
         </div>
         <br><br>
         <div class="view-more">
-          <button type="button" class="btn btn-secondary" >View more>></button><br><br>
+          <button type="button" class="btn btn-secondary" id="Viewmore" onclick="viewMore()" style="margin: auto;">View more>></button><br><br>
+          <button type="button" class="btn btn-secondary" id="Viewless" onclick="viewLess()">View Less>></button>
         </div>
         </div>
         <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,5 +151,7 @@
         </div>
     </footer>
         </div>
+      <script src="scripts/common.js"></script>
+      <script src="scripts\index.js"></script>
 </body>
 </html>

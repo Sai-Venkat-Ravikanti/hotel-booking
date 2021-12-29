@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="scripts\common.js"></script>
+<script src="scripts\detail.js"></script>
 </head>
 <body>
     <div class="modal fade" id="login-button" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -24,18 +26,18 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                      <label for="example-input-email" class="col-form-label" >Name</label>
-                      <input type="text" class="form-control" id="example-input-email">
+                      <label for="example-input-name" class="col-form-label" >UserName</label>
+                      <input type="text" class="form-control" id="example-input-name">
                     </div>
                     <div class="form-group">
-                        <label for="example-input-email" class="col-form-label" >Email address</label>
-                        <input type="text" class="form-control" id="example-input-email">
+                        <label for="example-input-password" class="col-form-label" >Password</label>
+                        <input type="password" class="form-control" id="example-input-password">
                       </div>
                     </form>
             </div>
             <div class="modal-footer" id="login-in-modal">
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-              <button type="button" class="btn btn-primary" >Login</button>
+              <button type="button" class="btn btn-primary" onclick="saveData()">Login</button>
             </div>
           </div>
         </div>
@@ -44,6 +46,7 @@
         <a href="index.html">
             <img src="assests/images/logo.png" alt="logo" id="logo"></a>
                 <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-button" id="login">Login</button>
+                <button type="button" onclick="logoutCollapse()" class="btn btn-light" id="logout">Logout</button>
     </header>
     <div id="content">
         <div id="hotel-Registration">
@@ -53,7 +56,7 @@
         <div id="Form-register">
             <form action="payment.html" method="get" border=1>
                <div class="form-element"> <label>Adults:</label>
-                <input type="number" value="1" min="1" name="numOfAdults">
+                <input type="number" value="1" min="1" name="numOfAdults" id="numOfAdults">
             </div>
             <div class="form-element">
                 <label>Name:</label>
@@ -61,15 +64,15 @@
             </div>
             <div class="form-element">
                 <label>From Date:</label>
-                <input type="date" name="fromDate" required>
+                <input type="date" name="fromDate" id="fromDate" value="" min="today" required>
             </div>
             <div class="form-element">
                 <label>To Date:</label>
-                <input type="date" name="toDate" required>
+                <input type="date" name="toDate" id="toDate"value="" required>
                 </div>
                 <div class="form-element">
                 <label>Total:</label>
-                <input type="text" name="total" name="price" readonly>
+                <input type="text" name="total" name="price" id="total" readonly>  
             </div>
             <div class="form-element">
                 <input type="submit" value="Book Now" id="button1" class="btn btn-outline-success">

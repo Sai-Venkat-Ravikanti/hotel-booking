@@ -133,3 +133,9 @@ footer
 {
     margin: 20px;
 }
+#logout{
+    display: none;
+    float:right;
+    margin-top: 12px;
+    margin-right: 20px;
+}
