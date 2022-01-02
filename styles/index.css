@@ -100,10 +100,11 @@ margin-left: 2%;
 input:focus{
     outline: none;
 }
-#viewmore{
+#Viewmore{
     /* text-align: center; */
     text-decoration: none;
-    margin: auto;
+    display: block;
+    margin: auto !important;
 }
 /* .view-more{
     margin: auto;
